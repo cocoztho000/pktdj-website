@@ -46,8 +46,8 @@
          
         if (title_text_src != "img/url_medium.png"){
          $('#title_text').fadeOut(200, function() {
-            $('#title_text').attr("src","img/url_medium.png");
             $('#title_text').fadeIn(200);
+            $('#title_text').attr("src","img/url_medium.png");
           });
         }
 
@@ -57,8 +57,8 @@
         var title_text_src = $('#title_text').attr('src');
         if (title_text_src != "img/main_logo_small_dark.png"){
          $('#title_text').fadeOut(200, function() {
-            $('#title_text').attr("src","img/main_logo_small_dark.png");
             $('#title_text').fadeIn(200);
+            $('#title_text').attr("src","img/main_logo_small_dark.png");
           });
         }
         // $("#title_text").attr("src","img/main_logo_small_dark.png");

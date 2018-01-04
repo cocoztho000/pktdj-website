@@ -19,6 +19,10 @@
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
   });
+ 
+  $('#title_text').click(function() {
+    $('html,body').animate({ scrollTop: 0 }, 'slow');
+  });
 
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
@@ -30,7 +34,7 @@
   var navbarCollapse = function() {
     var window_height = $( window ).height();
    
-    if ($("#mainNav").offset().top > 100) {
+    if ($("#mainNav").offset().top > 25) {
       $("#mainNav").addClass("navbar-shrink");
       $("#title_text").css("visibility", "visible");
 

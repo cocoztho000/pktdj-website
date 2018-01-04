@@ -238,3 +238,7 @@ header.masthead {
   height: 50px;
   padding: 0px;
 }
+
+#title_text:hover {
+  cursor: pointer;
+}

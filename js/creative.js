@@ -29,16 +29,19 @@
     target: '#mainNav',
     offset: 57
   });
-
+  var window_height = $( window ).height();
+  var animation_height_offset=(window_height-(window_height * .3))
   // Collapse Navbar
   var navbarCollapse = function() {
-    var window_height = $( window ).height();
    
+    var window_height = $( window ).height();
+    var window_width  = $( window ).width();
+
     if ($("#mainNav").offset().top > 25) {
       $("#mainNav").addClass("navbar-shrink");
       $("#title_text").css("visibility", "visible");
 
-      if ($("#mainNav").offset().top < (window_height-(window_height * .3))) {
+      if ($("#mainNav").offset().top < animation_height_offset || window_width < 992) {
         var title_text_src = $('#title_text').attr('src');
          
         if (title_text_src != "img/url_medium.png"){

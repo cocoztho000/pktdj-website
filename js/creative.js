@@ -30,7 +30,7 @@
     offset: 57
   });
   var window_height = $( window ).height();
-  var animation_height_offset=(window_height-(window_height * .3))
+  var animation_height_offset=(window_height-(window_height * .1))
   // Collapse Navbar
   var navbarCollapse = function() {
    
@@ -98,7 +98,7 @@
     duration: 600,
     scale: 0.3,
     distance: '0px'
-  }, 300);
+  }, 100);
 
   // Magnific popup calls
   $('.popup-gallery').magnificPopup({
